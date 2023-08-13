@@ -22,7 +22,7 @@ const Geotest = () => {
     <div className="h-screen">
       <div className="w-screen h-[calc(100%-100px)]">
         <GoogleMapReact
-          bootstrapURLKeys={{ key: "AIzaSyDjFN0kUjmHawSnyW7GoTvqsSJZFLs69u0" }}
+          bootstrapURLKeys={{ key: `${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API}` }}
           defaultCenter={cordinates}
           center={cordinates}
           defaultZoom={14}
